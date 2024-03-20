@@ -140,6 +140,20 @@
             <li><strong>nslookup</strong><br>Nslookup (stands for “Name Server Lookup”) is a useful command for getting information from the DNS server. It is a network administration tool for querying the Domain Name System (DNS) to obtain domain name or IP address mapping or any other specific DNS record. It is also used to troubleshoot DNS-related problems.</li>
         </ol>
     </div>
+    <h2>Practical 3: Windows ARP Poisoning</h2>
+        
+        <h3>Steps:</h3>
+        <ol>
+            <li>Open the Command Prompt on your laptop and run it as administrator.</li>
+            <li><span class="command">arp -a</span><br>The arp command displays and modifies entries in the Address Resolution Protocol (ARP) cache, which contains one or more tables that are used to store IP addresses and their resolved Ethernet or Token Ring physical addresses.</li>
+            <li><span class="command">ipconfig</span><br>The ipconfig command displays all current TCP/IP network configuration values and refreshes Dynamic Host Configuration Protocol (DHCP) and Domain Name System (DNS) settings.</li>
+            <li><span class="command">getmac</span><br>The getmac command gets the Media Access Control (MAC) address and lists associated network protocols for all network cards in the computer, both physical and virtual.</li>
+            <li><span class="command">arp -s &lt;ipv4 address&gt; &lt;mac address&gt;</span><br>The arp command with the -s option adds a static entry to the ARP cache. Replace &lt;ipv4 address&gt; with the IP address and &lt;mac address&gt; with the MAC address.</li>
+            <li><span class="command">arp -a</span><br>View the ARP table again to verify that the static entry has been added.</li>
+            <li><span class="command">arp -d 192.168.192.254</span><br>The arp command with the -d option deletes a specific entry from the ARP cache. Replace 192.168.192.254 with the IP address you want to delete.</li>
+            <li><span class="command">arp -a</span><br>View the ARP table again to confirm that the entry has been deleted.</li>
+        </ol>
+    </div>
 
     <div class="container">
         <div class="container">
